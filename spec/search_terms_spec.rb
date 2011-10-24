@@ -59,4 +59,11 @@ describe SearchTerms::Extractor do
       uri.search_string.should == "how to extract search terms"
     end
   end
+
+  context "baidu" do
+    it "returns search terms from query string" do
+      uri = URI("http://www.baidu.com/s?wd=how+to+extract+search+terms")
+      uri.search_string.should == "how to extract search terms"
+    end
+  end
 end

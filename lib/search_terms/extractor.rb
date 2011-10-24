@@ -10,6 +10,8 @@ module SearchTerms
         query_parameters["q"].first
       when :yahoo
         query_parameters["p"].first
+      when :baidu
+        query_parameters["wd"].first
       end
     end
 
@@ -29,6 +31,8 @@ module SearchTerms
         :duckduckgo
       when /dogpile\./
         :dogpile
+      when /baidu\./
+        :baidu
       end
     end
 
