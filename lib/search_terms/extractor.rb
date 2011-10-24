@@ -8,6 +8,8 @@ module SearchTerms
       case search_engine
       when :google
         query_parameters["q"].first
+      when :yahoo
+        query_parameters["p"].first
       end
     end
 
@@ -17,6 +19,8 @@ module SearchTerms
       case host
       when /google\./
         :google
+      when /yahoo\./
+        :yahoo
       end
     end
 

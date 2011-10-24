@@ -24,4 +24,11 @@ describe SearchTerms::Extractor do
       uri.search_string.should == "how to extract search terms"
     end
   end
+
+  context "yahoo" do
+    it "returns search terms from query string" do
+      uri = URI("http://search.yahoo.com/search;_ylt=abc123?p=how+to+extract+search+terms")
+      uri.search_string.should == "how to extract search terms"
+    end
+  end
 end
