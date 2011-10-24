@@ -6,8 +6,6 @@ search engine referral URLs
 ## Quick Examples
 
 ```ruby
-require "uri"
-
 require "rubygems"
 require "search_terms"
 

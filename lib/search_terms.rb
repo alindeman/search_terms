@@ -1,5 +1,7 @@
-require "search_terms/version"
+require "uri"
+require "cgi"
 
-module SearchTerms
-  # Your code goes here...
-end
+require "search_terms/version"
+require "search_terms/extractor"
+
+require "search_terms/ext/uri"
