@@ -1,5 +1,7 @@
 # search\_terms
 
+[![Build Status](https://secure.travis-ci.org/alindeman/search_terms.png)](http://travis-ci.org/alindeman/search_terms)
+
 **TL;DR**: **search\_terms** extracts search terms (keywords) from
 search engine referral URLs
 
