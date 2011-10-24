@@ -15,6 +15,13 @@ referrer = URI("http://google.com/?q=how+to+extract+search+terms")
 referrer.search_string # => "how to extract search terms"
 ```
 
+Within a Rails or Sinatra application, the referrer is accessible via
+the `request` object:
+
+```ruby
+request.referrer
+```
+
 ## Search Engine Support
 
 * Google
