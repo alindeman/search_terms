@@ -31,4 +31,11 @@ describe SearchTerms::Extractor do
       uri.search_string.should == "how to extract search terms"
     end
   end
+
+  context "bing" do
+    it "returns search terms from query string" do
+      uri = URI("http://www.bing.com/search?q=how+to+extract+search+terms")
+      uri.search_string.should == "how to extract search terms"
+    end
+  end
 end

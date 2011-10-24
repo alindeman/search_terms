@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["alindeman@gmail.com"]
   s.homepage    = "https://github.com/alindeman/search_terms"
   s.summary     = %q{Extracts search terms from search engine referral URLs}
-  s.description = %q{Supports extracting search terms from Google, Bing, Yahoo, DuckDuckGo, AOL, and MSN}
+  s.description = %q{Supports extracting search terms from Google, Bing, Yahoo, DuckDuckGo, and AOL}
 
   s.rubyforge_project = "search_terms"
 
