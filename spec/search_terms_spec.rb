@@ -38,4 +38,11 @@ describe SearchTerms::Extractor do
       uri.search_string.should == "how to extract search terms"
     end
   end
+
+  context "aol" do
+    it "returns search terms from query string" do
+      uri = URI("http://search.aol.com/aol/search?q=how+to+extract+search+terms")
+      uri.search_string.should == "how to extract search terms"
+    end
+  end
 end

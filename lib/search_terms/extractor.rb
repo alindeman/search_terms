@@ -6,7 +6,7 @@ module SearchTerms
   module Extractor
     def search_string
       case search_engine
-      when :google, :bing
+      when :google, :bing, :aol
         query_parameters["q"].first
       when :yahoo
         query_parameters["p"].first
@@ -23,6 +23,8 @@ module SearchTerms
         :bing
       when /yahoo\./
         :yahoo
+      when /search\.aol\./
+        :aol
       end
     end
 
